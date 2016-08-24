@@ -1,0 +1,17 @@
+web:
+    restart: always
+    build: .
+    command: npm start
+    links:
+        - db
+    ports:
+        - "9090:9090"
+
+db:
+    image: mongo:3.2
+    container_name: db_1
+    restart: always
+    ports:
+        - "27017:27017"
+    volumes:
+        - db:/data/db

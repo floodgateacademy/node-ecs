@@ -1,0 +1,15 @@
+{
+  "name": "node-ecs",
+  "version": "1.0.0",
+  "description": "Node.js Hello World app on CentOS using docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "DeVaris Brown",
+  "license": "ISC",
+  "dependencies": {
+      "express": "*"
+  }
+}
